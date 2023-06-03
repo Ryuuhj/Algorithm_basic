@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class P1253_좋은수 {
@@ -41,6 +40,5 @@ public class P1253_좋은수 {
             }
         }
         System.out.println(cnt);
-
     }
 }
