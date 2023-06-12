@@ -1,5 +1,6 @@
 import 버블정렬.P1377_버블소트1;
 import 버블정렬.P2750_수_정렬하기;
+import 병합정렬.P1517_버블소트2;
 import 병합정렬.P2751_수_정렬하기2;
 import 병합정렬.P2751_수_정렬하기2_2;
 import 삽입정렬.P11399_ATM;
@@ -16,7 +17,8 @@ public class App {
     //static P11399_ATM2 a = new P11399_ATM2();
     //static P11004_K번째수 a = new P11004_K번째수();
     //static P2751_수_정렬하기2 a = new P2751_수_정렬하기2();
-    static P2751_수_정렬하기2_2 a = new P2751_수_정렬하기2_2();
+    //static P2751_수_정렬하기2_2 a = new P2751_수_정렬하기2_2();
+    static P1517_버블소트2 a = new P1517_버블소트2();
 
     public static void main(String[] args) throws Exception {
         a.out();
