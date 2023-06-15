@@ -36,10 +36,25 @@ public class P10989_수정렬하기3 {
             int[] bucket = new int[10];
             
             for(int i=0; i<A.length; i++){
-                //자릿수 기준 큐 저장 (일의 자리~천의 자리)
-                
-                bucket[(A[i]/digit)*digit]++;
+                //자릿수 기준 해당하는 큐에 개수++ (일의 자리~천의 자리)
+                bucket[(A[i]/digit)%10]++;
             }
+            //합 배열 사용해 index 계산
+            for(int i=1;i<10;i++){
+                bucket[i] += bucket[i-1];
+            }
+            //output에 순서대로 재정렬
+            for(int i = A.length-1; i>=0; i--){ //A의 요소들을 역순으로 탐색
+                output[bucket[(A[i]/digit)%10]-1] = A[i]; //A[i]를 현재 자릿수에서 해당하는 bucket 배열의 개수에 맞는 인덱스에 저장
+                bucket[(A[i]/digit)%10]--;//요소를 output에 하나 저장했으니 bucket에 있는 수 하나
+            }
+            //재정렬된 A로 다시 돌리기 
+            for(int i=0;i<A.length;i++){
+                A[i] = output[i];
+            }
+            //자릿수 늘리기
+            digit = digit * 10;
+            count++;
         }
 
     }
