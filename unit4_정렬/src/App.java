@@ -7,6 +7,7 @@ import 병합정렬.P2751_수_정렬하기2_2;
 import 삽입정렬.P11399_ATM;
 import 삽입정렬.P11399_ATM2;
 import 선택정렬.P1427_소트인사이드;
+import 카운팅정렬.P10989_수정렬하기3_2;
 import 퀵정렬.P11004_K번째수;
 
 public class App {
@@ -20,7 +21,8 @@ public class App {
     //static P2751_수_정렬하기2 a = new P2751_수_정렬하기2();
     //static P2751_수_정렬하기2_2 a = new P2751_수_정렬하기2_2();
     //static P1517_버블소트2 a = new P1517_버블소트2();
-    static P10989_수정렬하기3 a = new P10989_수정렬하기3();
+    //static P10989_수정렬하기3 a = new P10989_수정렬하기3();
+    static P10989_수정렬하기3_2 a = new P10989_수정렬하기3_2();
 
     public static void main(String[] args) throws Exception {
         a.out();
