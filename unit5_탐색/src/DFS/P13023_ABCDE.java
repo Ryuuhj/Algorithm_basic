@@ -36,7 +36,7 @@ public class P13023_ABCDE {
         }
         //dfs 수행
         for(int i=0;i<N;i++){
-            visited = new boolean[N];
+             
             dfs(i,1);
             if(result)
                 break;
