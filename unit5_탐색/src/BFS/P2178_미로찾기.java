@@ -39,7 +39,7 @@ public class P2178_미로찾기 {
                 int x = pair.x + dx[k];
                 int y = pair.y + dy[k];
                 //좌표 조건 선 검사
-                if((x>=0) && (y>=0) && (x<N) && (y<M)){
+                if((x>=0) || (y>=0) || (x<N) || (y<M)){
                     if(!visited[x][y]&& maze[x][y]==1){
                         queue.offer(new Pair(x, y));
                         visited[x][y] = true;
