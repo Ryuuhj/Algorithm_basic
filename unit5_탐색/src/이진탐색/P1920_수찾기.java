@@ -6,7 +6,6 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-import javax.print.attribute.standard.Media;
 
 public class P1920_수찾기 {
     static int[] A;
