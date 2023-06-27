@@ -4,6 +4,7 @@ import BFS.P2178_미로찾기;
 import DFS.P11724_연결요소_개수;
 import DFS.P13023_ABCDE;
 import DFS.P2023_신기한_소수;
+import 이진탐색.P1300_K번째수;
 import 이진탐색.P1920_수찾기;
 import 이진탐색.P2343_기타레슨;
 
@@ -16,7 +17,8 @@ public class App {
     //static P2178_미로찾기 a = new P2178_미로찾기();
     //static P1167_트리의지름 a = new P1167_트리의지름();
     //static P1920_수찾기 a = new P1920_수찾기();
-    static P2343_기타레슨 a = new P2343_기타레슨();
+    //static P2343_기타레슨 a = new P2343_기타레슨();
+    static P1300_K번째수 a = new P1300_K번째수();
 
     public static void main(String[] args) throws Exception {
         a.out();
