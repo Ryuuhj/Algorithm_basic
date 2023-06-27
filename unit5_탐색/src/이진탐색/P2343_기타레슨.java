@@ -26,12 +26,11 @@ public class P2343_기타레슨 {
             end += lectures[i];
         }
 
-        int count=0, sum = 0;
         while(start <= end){
             int median = (start + end)/2;
-            
-            for(int j=0; j<N; j++){
-                int length = lectures[j];
+            int count=0, sum = 0;
+            for(int length : lectures){
+                //int length = lectures[j];
                 if(sum + length <= median){
                     sum += length;
                 }else{
@@ -39,8 +38,10 @@ public class P2343_기타레슨 {
                     count++;
                 }
             }
-            if(sum!=0) count++;
-            if(count <= 3)
+            if(sum!=0) 
+                count++;
+
+            if(count <= M)
                 end = median -1;
             else
                 start = median +1;
