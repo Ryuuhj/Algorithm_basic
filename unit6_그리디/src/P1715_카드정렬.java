@@ -1,20 +1,20 @@
+
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.LinkedList;
-import java.util.PriorityQueue;
-import java.util.Scanner;
+import java.util.*;
 
 public class P1715_카드정렬 {
 
-    public static void out() {
-        Scanner sc = new Scanner(System.in);
+    public static void out() throws IOException{
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         PriorityQueue<Integer> pQueue = new PriorityQueue<>();
-        int N = sc.nextInt();
+        int N = Integer.parseInt(bf.readLine());
 
-        Long cnt = 0L;
+        int cnt = 0;
 
         for(int i=0;i<N;i++){
-            pQueue.add(sc.nextInt());
+            pQueue.add(Integer.parseInt(bf.readLine()));
         }
 
         int c1, c2 =0;
