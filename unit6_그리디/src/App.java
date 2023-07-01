@@ -3,7 +3,8 @@ public class App {
     //static P1715_카드정렬 a = new P1715_카드정렬();
     //static P1744_수묶기 a = new P1744_수묶기();
     //static P1744_수묶기ver2 a = new P1744_수묶기ver2();
-    static P1931_회의실배정 a = new P1931_회의실배정();
+    //static P1931_회의실배정 a = new P1931_회의실배정();
+    static P1541_잃어버린괄호 a = new P1541_잃어버린괄호();
 
     public static void main(String[] args) throws Exception {
         a.out();
