@@ -31,6 +31,7 @@ public class P1456_거의소수 {
                 
                 if(A <= sq) cnt++;
                 sq *= i;
+                if(sq % i != 0) break; //i^3 이상부터 long 범위를 초과해 쓰레기 값이 담기면 sq<=B로 걸러지지 못하므로 break 해줌
             }
         }
 
