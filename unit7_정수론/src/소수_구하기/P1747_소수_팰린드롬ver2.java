@@ -1,3 +1,4 @@
+package 소수_구하기;
 import java.util.Scanner;
 
 public class P1747_소수_팰린드롬ver2{
