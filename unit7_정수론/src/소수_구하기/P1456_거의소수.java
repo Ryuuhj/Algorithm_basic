@@ -1,3 +1,4 @@
+package 소수_구하기;
 import java.util.Scanner;
 
 public class P1456_거의소수 {
