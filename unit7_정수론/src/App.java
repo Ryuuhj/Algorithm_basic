@@ -4,6 +4,7 @@ import 오일러_피.P11698_오일러피_구현;
 import 유클리드_호제법.P1033_칵테일;
 import 유클리드_호제법.P1850_최대공약수;
 import 유클리드_호제법.P1934_최소공배수;
+import 유클리드_호제법.P21568_방정식해_구하기;
 import 소수_구하기.P1456_거의소수;
 import 소수_구하기.P1747_소수_팰린드롬;
 import 소수_구하기.P1016_제곱ㄴㄴ수;
@@ -17,7 +18,9 @@ public class App {
     //static P11698_오일러피_구현 a = new P11698_오일러피_구현();
     // static P1934_최소공배수 a = new P1934_최소공배수();
     // static P1850_최대공약수 a = new P1850_최대공약수();
-    static P1033_칵테일 a = new P1033_칵테일();
+    //static P1033_칵테일 a = new P1033_칵테일();
+    static P21568_방정식해_구하기 a = new P21568_방정식해_구하기();
+
     public static void main(String[] args) throws Exception {
         a.out();
     }
