@@ -70,10 +70,6 @@ public class P1948_임계경로 {
                     cnt++;
                     queue.offer(previous);
                     counted[now][previous] = true;
-                    // if(!counted[now][previous]){
-                    //     queue.offer(previous);
-                    //     counted[now][previous] = true;
-                    // }
                     
                 }
             }
@@ -81,9 +77,5 @@ public class P1948_임계경로 {
 
         System.out.println(accTime[endCity]);
         System.out.println(cnt);
-        
-
-        
-
     }
 }
