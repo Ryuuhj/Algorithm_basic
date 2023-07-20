@@ -7,6 +7,7 @@ import 그래프의_표현.P2251_물통;
 import 다익스트라.P1753_최단경로;
 import 다익스트라.P1854_K번째_최단경로_찾기;
 import 다익스트라.P1916_최소비용_구하기;
+import 벨만_포드.P11657_타임머신;
 import 위상정렬.P1516_게임개발;
 import 위상정렬.P1948_임계경로;
 import 위상정렬.P2252_줄세우기;
@@ -28,7 +29,8 @@ public class App {
     // static P1948_임계경로 a = new P1948_임계경로();
     // static P1753_최단경로 a = new P1753_최단경로();
     // static P1916_최소비용_구하기 a = new P1916_최소비용_구하기();
-    static P1854_K번째_최단경로_찾기 a = new P1854_K번째_최단경로_찾기();
+    //static P1854_K번째_최단경로_찾기 a = new P1854_K번째_최단경로_찾기();
+    static P11657_타임머신 a = new P11657_타임머신();
     public static void main(String[] args) throws Exception {
         a.out();
     }
