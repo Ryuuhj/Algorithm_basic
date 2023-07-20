@@ -7,9 +7,9 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class P11657_타임머신 {
-    static final int INF = 6000*499 +1;
+    static final int INF = Integer.MAX_VALUE;
     static Edge[] edgeList;
-    static int[] D;
+    static long [] D;
     static int N, M;
 
     public static void out() throws IOException{
@@ -18,9 +18,9 @@ public class P11657_타임머신 {
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
         edgeList = new Edge[M];
-        D = new int[N+1];
+        D = new long[N+1];
         Arrays.fill(D, INF);
-        D[1] = 0;
+        D[1] = 0L;
         
         for(int i=0; i<M; i++){
             st = new StringTokenizer(bf.readLine());
@@ -31,31 +31,33 @@ public class P11657_타임머신 {
             edgeList[i] = new Edge(a, b, c);
         }
 
-        for(int i=0; i<N-1; i++){
-            bf();
+        boolean cycle = false;
+        for(int i=0; i<N; i++){
+            for(Edge edge : edgeList){
+                
+                if((D[edge.start] != INF) && (D[edge.end] > D[edge.start] + edge.w)){
+                    D[edge.end] = D[edge.start]+ edge.w;
+                    if(i==N-1) cycle = true;
+                }
         }
-        if(isCycle()){
+        }
+
+        
+        if(cycle){
             System.out.println(-1);
             return;
         }
+        else{
+            StringBuilder sb = new StringBuilder();
+            for(int idx=2; idx<D.length; idx++){
+                if(D[idx]==INF) sb.append("-1\n");
+                else sb.append(D[idx]+"\n");
+            }
+            System.out.println(sb);
+        }
+        
         
     }
-
-    
-    private static boolean isCycle() {
-        return false;
-    }
-
-
-    private static void bf() {
-        for(int i=0; i<M; i++){
-            Edge edge = edgeList[i];
-            if((edge.start!=INF) && (D[edge.end] > D[edge.start] + edge.w)){
-                D[edge.end] = D[edge.start]+ edge.w;
-            }
-        }
-    }
-
 
     static class Edge{
         int start;
