@@ -59,7 +59,7 @@ public class P11657_타임머신 {
         
     }
 
-    static class Edge{
+    private static class Edge{
         int start;
         int end;
         int w;
