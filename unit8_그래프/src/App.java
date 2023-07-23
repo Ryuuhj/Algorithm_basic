@@ -15,6 +15,7 @@ import 위상정렬.P2252_줄세우기;
 import 유니온_파인드.P1043_거짓말;
 import 유니온_파인드.P1717_집합의표현;
 import 유니온_파인드.P1976_여행가자;
+import 플로이드_워셜.P11404_플로이드;
 
 public class App {
 
@@ -32,8 +33,9 @@ public class App {
     // static P1916_최소비용_구하기 a = new P1916_최소비용_구하기();
     //static P1854_K번째_최단경로_찾기 a = new P1854_K번째_최단경로_찾기();
     // static P11657_타임머신 a = new P11657_타임머신();
-    static P1219_오민식의_고민 a = new P1219_오민식의_고민();
-    
+    // static P1219_오민식의_고민 a = new P1219_오민식의_고민();
+    static P11404_플로이드 a = new P11404_플로이드();
+
     public static void main(String[] args) throws Exception {
         a.out();
     }
