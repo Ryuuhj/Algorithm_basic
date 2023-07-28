@@ -42,8 +42,6 @@ public class P1197_최소스패닝트리 {
                  accVal += edge.value;
                  edgeCount++;
              }
-
-
         }
         return accVal;
     }
