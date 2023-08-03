@@ -1,4 +1,4 @@
-package 트리_알아보기;
+package 트라이;
 
 import java.io.BufferedReader;
 import java.io.IOException;
