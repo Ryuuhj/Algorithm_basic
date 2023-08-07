@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 public class P11437_LCA {
     static ArrayList<Integer>[] tree;
     static int[] parent, depth;
-    static boolean[] visitied;
+    static boolean[] visited;
 
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
@@ -21,7 +21,7 @@ public class P11437_LCA {
         }
         parent = new int[n + 1];
         depth = new int[n + 1];
-        visitied = new boolean[n + 1];
+        visited = new boolean[n + 1];
         while (n-- > 1) {
             st = new StringTokenizer(bf.readLine());
             int a = Integer.parseInt(st.nextToken());
@@ -61,12 +61,12 @@ public class P11437_LCA {
     }
 
     private static void dfs(int now, int height) {
-        if(visitied[now]) return;
-        visitied[now] = true;
+        if(visited[now]) return;
+        visited[now] = true;
         depth[now] = height;
         height++;
         for (int next : tree[now]) {
-            if(visitied[next]) continue;
+            if(visited[next]) continue;
             parent[next] = now;
             dfs(next, height);
         }
