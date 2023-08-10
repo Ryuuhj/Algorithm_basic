@@ -19,7 +19,7 @@ public class P1010_다리놓기 {
         }
         //배열 채우기
         for (int i = 1; i < 30; i++) {
-            for (int j = 2; j <= i; j++) {
+            for (int j = 2; j < i; j++) {
                 D[i][j] = D[i - 1][j] + D[i - 1][j - 1];
             }
         }
