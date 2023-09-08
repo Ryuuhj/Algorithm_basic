@@ -22,6 +22,5 @@ public class P1157_단어공부 {
             }
         }
         System.out.println(ans);
-
     }
 }
