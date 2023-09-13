@@ -6,6 +6,7 @@ public class P2292_벌집 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
+
         int layer = 1, rooms = 2;
 
         if (N == 1) {
