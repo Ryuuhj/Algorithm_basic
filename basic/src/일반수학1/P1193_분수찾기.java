@@ -23,6 +23,7 @@ public class P1193_분수찾기 {
             i = k - diff;
             j = 1 + diff;
         }
+
         bw.write(i + "/" + j);
         bw.flush();
         bw.close();
