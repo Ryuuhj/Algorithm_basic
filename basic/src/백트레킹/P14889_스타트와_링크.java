@@ -49,8 +49,8 @@ public class P14889_스타트와_링크 {
 
     private static void calculate() {
         long[] value = new long[3];
-        for (int i = 0; i < N-1; i++) {
-            for (int j = i + 1; j < N; j++) {
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < i; j++) {
                 if (AT[j] == AT[i]) {
                     value[AT[j]] += (stat[i][j] + stat[j][i]);
                 }
