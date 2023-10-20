@@ -8,7 +8,7 @@ public class P1206_View {
     public static void main(String args[]) throws Exception {
         Scanner sc = new Scanner(System.in);
         StringBuilder sb = new StringBuilder();
-        int T = sc.nextInt();
+        int T = 10;
 
         for(int test_case = 1; test_case <= T; test_case++) {
             sb.append("#").append(test_case).append(" ");
