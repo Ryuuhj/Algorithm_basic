@@ -7,7 +7,6 @@ public class P5215_햄버거_다이어트 {
     static int N, L;
     static int maxValue;
     static Ingredient[] arr;
-    static boolean[] used;
 
 
     public static void main(String[] args) throws IOException {
@@ -26,7 +25,6 @@ public class P5215_햄버거_다이어트 {
                 arr[i] = new Ingredient(Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken()));
             }
 
-            used = new boolean[N];
             maxValue = Integer.MIN_VALUE;
 
             getMax(0, 0, L);
