@@ -7,8 +7,7 @@ import java.util.StringTokenizer;
 
 public class Main_1012 {
     static final int[] dx = {1, 0, -1, 0};
-    static final int[] dy = {0, 1, 0, -1};
-
+    static final int[] dy = {0,     1, 0, -1};
     static int T, M, N, K, x, y, cNum;
     static int[][] field;
     static boolean[][] visited;
